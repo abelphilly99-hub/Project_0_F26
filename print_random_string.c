@@ -1,10 +1,10 @@
 
-
+//#include "random.c"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-
+void rand_string(char *s, size_t size);
 
 // random string generator wrapper function
 char* rand_string_alloc(size_t size)
@@ -22,7 +22,7 @@ int main()
 
 {
     char *str;
-    size_t size =   ;  //specify a value for size of word
+    size_t size =  7 ;  //specify a value for size of word
 
 	/* seed the randomizer */
 	srand( (unsigned)time(NULL) );
